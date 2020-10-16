@@ -1,6 +1,6 @@
 {
   "name": "react-pwa-installer-prompt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provide your own custom install flow, directly within your app.",
   "author": "Naveen",
   "license": "MIT",
@@ -31,7 +31,6 @@
     "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "microbundle-crl": "^0.13.11",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.2",
     "eslint": "^7.11.0",
@@ -45,6 +44,7 @@
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^3.1.0",
+    "microbundle-crl": "^0.13.11",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2"
   },
