@@ -72,4 +72,4 @@ const PWAInsatllerPrompt = ({
   return <InstallButton onClick={handleOnInstall} />
 }
 
-export defautl PWAInsatllerPrompt
+export default PWAInsatllerPrompt
