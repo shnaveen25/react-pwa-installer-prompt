@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const PWAInsatllerPrompt = ({
+const PWAInstallerPrompt = ({
   render: InstallButton,
   callback,
 }) => {
@@ -72,4 +72,4 @@ const PWAInsatllerPrompt = ({
   return <InstallButton onClick={handleOnInstall} />;
 }
 
-export default PWAInsatllerPrompt;
+export default PWAInstallerPrompt;

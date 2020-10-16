@@ -9,11 +9,11 @@ Provide your own custom install flow, directly within your app,  Progressive Web
 This package reduces the pain of the development and gives you a wings to have your custom implementation to display promotion with a simple steps.
 
     import React from 'react';
-    import PWAInsatllerPrompt from 'react-pwa-installer-prompt';
+    import PWAInstallerPrompt from 'react-pwa-installer-prompt';
     
     const App = () => {
       return (
-        <PWAInsatllerPrompt 
+        <PWAInstallerPrompt 
           render={({ onClick }) => (
             <button type="dashed" onClick={onClick}> // make sure you pass onClick
               Install
@@ -43,12 +43,12 @@ Ex: You can have a custom component for in-app promo
 
     import React from 'react';
     import { Row, Col, Button } from 'antd';
-    import PWAInsatllerPrompt from 'react-pwa-installer-prompt'
+    import PWAInstallerPrompt from 'react-pwa-installer-prompt'
     import './index.css';
     
     const Install = () => {       
       return (  
-        <PWAInsatllerPrompt 
+        <PWAInstallerPrompt 
           render={({ onClick }) => (
             <div className="install_promotion" style={{ fontSize: '14px' }}>
               <Row align="middle" justify="center">
