@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { PWAInsatllerPrompt } from 'react-pwa-installer-prompt'
+import PWAInsatllerPrompt from 'react-pwa-installer-prompt'
 
 const App = () => {
   return (
@@ -15,4 +15,4 @@ const App = () => {
   );
 }
 
-export default App
+export default App;

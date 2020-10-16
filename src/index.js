@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const PWAInsatllerPrompt = ({
   render: InstallButton,
@@ -69,7 +69,7 @@ const PWAInsatllerPrompt = ({
   
   if (!installStatus.isInstallAllowed) { return false; }
   
-  return <InstallButton onClick={handleOnInstall} />
+  return <InstallButton onClick={handleOnInstall} />;
 }
 
 export default PWAInsatllerPrompt;
