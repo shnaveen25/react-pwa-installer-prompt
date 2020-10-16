@@ -61,5 +61,15 @@
   },
   "dependencies": {
     "np": "^6.5.0"
-  }
+  },
+  "keywords": [
+    "PWA",
+    "add to home screen",
+    "Progressive Web App",
+    "in-app instal",
+    "in-app prompt",
+    "install",
+    "react-component",
+    "react"
+  ]
 }
