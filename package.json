@@ -1,6 +1,6 @@
 {
   "name": "react-pwa-installer-prompt",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Provide your own custom install flow, directly within your app.",
   "author": "Naveen",
   "license": "MIT",
