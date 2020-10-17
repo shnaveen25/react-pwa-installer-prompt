@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-pwa-installer-prompt-example"]=this["webpackJsonpreact-pwa-installer-prompt-example"]||[]).push([[0],{10:function(e,t,n){"use strict";n.r(t);n(5);var a=n(0),l=n.n(a),r=n(2),c=n.n(r),o=n(3),p=()=>l.a.createElement(o.a,{render:({onClick:e})=>l.a.createElement("button",{type:"dashed",onClick:e},"Install"),callback:e=>console.log(e)});c.a.render(l.a.createElement(p,null),document.getElementById("root"))},4:function(e,t,n){e.exports=n(10)},5:function(e,t,n){}},[[4,1,2]]]);
+//# sourceMappingURL=main.e097aea3.chunk.js.map
