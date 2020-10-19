@@ -33,8 +33,7 @@ const App = () => {
 	  />
 	);
 }
-    
-    export default App;
+export default App;
 ```
 
 ## Demo
@@ -53,8 +52,7 @@ For the good experience open-up in mobile https://naveenh.xyz. (Install option w
 ```javascript
 import React from 'react';
 import { Row, Col, Button } from 'antd';
-import PWAInstallerPrompt from 'react-pwa-installer-prompt'
-import './index.css';
+import PWAInstallerPrompt from 'react-pwa-installer-prompt';
 
 const Install = () => {       
   return (  
