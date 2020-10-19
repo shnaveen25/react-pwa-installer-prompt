@@ -17,22 +17,22 @@ Make sure that your PWA is installable and Proper configured Manifest file
 
 ## Importing
 ```javascript
-    import PWAInstallerPrompt from 'react-pwa-installer-prompt';
+import PWAInstallerPrompt from 'react-pwa-installer-prompt';
 ``` 
-  ## Usage
+## Usage
 ```javascript
-    const App = () => {
-      return (
-        <PWAInstallerPrompt 
-          render={({ onClick }) => (
-            <button type="button" onClick={onClick}> // make sure you pass onClick
-              Install
-            </button>
-          )}
-          callback={(data) => console.log(data)} 
-        />
-      );
-    }
+const App = () => {
+	return (
+	  <PWAInstallerPrompt 
+	    render={({ onClick }) => (
+	      <button type="button" onClick={onClick}> // make sure you pass onClick
+	        Install
+	      </button>
+	    )}
+	    callback={(data) => console.log(data)} 
+	  />
+	);
+}
     
     export default App;
 ```
@@ -51,40 +51,40 @@ For the good experience open-up in mobile https://naveenh.xyz. (Install option w
 
 #### Ex: You can have a custom component for in-app promo
 ```javascript
-	import React from 'react';
-    import { Row, Col, Button } from 'antd';
-    import PWAInstallerPrompt from 'react-pwa-installer-prompt'
-    import './index.css';
-    
-    const Install = () => {       
-      return (  
-        <PWAInstallerPrompt 
-          render={({ onClick }) => (
-            <Row align="middle" justify="center">
-              <Col span={16}>
-                  Keep App, For Offline & Quick Access!
-              </Col>
-              <Col span={6}>
-                <Button type="dashed" onClick={onClick}>
-                  Install
-                </Button>
-              </Col>
-            </Row>
-          )}
-          callback={(data) => console.log(data)} 
-        />
-      )
-    }
-    export default Install
+import React from 'react';
+import { Row, Col, Button } from 'antd';
+import PWAInstallerPrompt from 'react-pwa-installer-prompt'
+import './index.css';
+
+const Install = () => {       
+  return (  
+    <PWAInstallerPrompt 
+      render={({ onClick }) => (
+        <Row align="middle" justify="center">
+          <Col span={16}>
+              Keep App, For Offline & Quick Access!
+          </Col>
+          <Col span={6}>
+            <Button type="dashed" onClick={onClick}>
+              Install
+            </Button>
+          </Col>
+        </Row>
+      )}
+      callback={(data) => console.log(data)} 
+    />
+  )
+}
+export default Install;
 ```
 Callback properties:
 ```javascript
-    {
-        isInstallAllowed: true, // true, if app in not installed and when user has cancelled the request
-        isInstallWatingConfirm: false, // true, if user has clicked on install and not confirmed 
-        isInstalling: false, // true, if being installed
-        isInstallCancelled: false, // true, if user has cancelled 
-        isInstallSuccess: false, // true, if install success
-        isInstallFailed: false // true, if installation is failed
-    }
+{
+   isInstallAllowed: true, // true, if app in not installed and when user has cancelled the request
+   isInstallWatingConfirm: false, // true, if user has clicked on install and not confirmed 
+   isInstalling: false, // true, if being installed
+   isInstallCancelled: false, // true, if user has cancelled 
+   isInstallSuccess: false, // true, if install success
+   isInstallFailed: false // true, if installation is failed
+}
 ```
