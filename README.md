@@ -2,9 +2,6 @@
 ## **react-pwa-installer-prompt**
 
 Provide your own custom install flow, directly within your app,  Progressive Web App (PWA) directly within the user interface of your app makes easier for users to install your PWA on their mobile or desktop device. 
-
-## Installation
-    npm i --save react-pwa-installer-prompt
     
 ## Package is helpfull for
 
@@ -12,9 +9,18 @@ Provide your own custom install flow, directly within your app,  Progressive Web
 
 This package reduces the pain of the development and gives you a wings to have your custom implementation to display promotion with a simple steps.
 
-    import React from 'react';
+## Pre-Requisites
+Make sure that your PWA is installable and Proper configured Manifest file
+
+## Installation
+    npm i --save react-pwa-installer-prompt
+
+## Importing
+```javascript
     import PWAInstallerPrompt from 'react-pwa-installer-prompt';
-    
+``` 
+  ## Usage
+```javascript
     const App = () => {
       return (
         <PWAInstallerPrompt 
@@ -29,9 +35,7 @@ This package reduces the pain of the development and gives you a wings to have y
     }
     
     export default App;
- 
-## Pre-Requisites
-Make sure that your PWA is installable and Proper configured Manifest file
+```
 
 ## Demo
 Visit here for the [demo](https://bit.ly/33QBYj9). (Shows `+` icon in the omnibox).
@@ -41,13 +45,13 @@ For the good experience open-up in mobile https://naveenh.xyz. (Install option w
 ## Props
 |Props| Type |Description|
 |--|--|--|
-| render | component  | Your custom component to show in-app promo. It is mandatory to pass onClick in the button or any element where click event triggers| 
+| render | function  | Your custom component as a function to show in-app promo. It is mandatory to pass onClick in the button or any element where click event triggers| 
 |callback|object|Package has identified the events which are being triggers during installation process, When ever an event changes the callback gives you the installation status. |
 
 
-Ex: You can have a custom component for in-app promo
-
-    import React from 'react';
+#### Ex: You can have a custom component for in-app promo
+```javascript
+	import React from 'react';
     import { Row, Col, Button } from 'antd';
     import PWAInstallerPrompt from 'react-pwa-installer-prompt'
     import './index.css';
@@ -72,9 +76,9 @@ Ex: You can have a custom component for in-app promo
       )
     }
     export default Install
-
+```
 Callback properties:
-
+```javascript
     {
         isInstallAllowed: true, // true, if app in not installed and when user has cancelled the request
         isInstallWatingConfirm: false, // true, if user has clicked on install and not confirmed 
@@ -83,3 +87,4 @@ Callback properties:
         isInstallSuccess: false, // true, if install success
         isInstallFailed: false // true, if installation is failed
     }
+```

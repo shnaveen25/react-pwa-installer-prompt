@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-pwa-installer-prompt": "file:.."
+    "react-pwa-installer-prompt": "link:.."
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

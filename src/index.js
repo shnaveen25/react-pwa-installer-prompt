@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 const PWAInstallerPrompt = ({
   render: InstallButton,
@@ -19,7 +20,7 @@ const PWAInstallerPrompt = ({
   const [installEvent, setInstallEvent] = useState(null);
   
   useEffect(() => {
-    callback(installStatus);
+    if (callback) { callback(installStatus); }
   }, [installStatus]);
   
   const beforeAppInstallpromptHandler = (e) => {
@@ -71,5 +72,14 @@ const PWAInstallerPrompt = ({
   
   return <InstallButton onClick={handleOnInstall} />;
 }
+
+PWAInstallerPrompt.propTypes = {
+  render: PropTypes.func.isRequired,
+  callback: PropTypes.func,
+};
+
+PWAInstallerPrompt.defaultProps = { 
+  callback: undefined
+};
 
 export default PWAInstallerPrompt;
