@@ -22,16 +22,16 @@ import PWAInstallerPrompt from 'react-pwa-installer-prompt';
 ## Usage
 ```javascript
 const App = () => {
-	return (
-	  <PWAInstallerPrompt 
-	    render={({ onClick }) => (
-	      <button type="button" onClick={onClick}> // make sure you pass onClick
-	        Install
-	      </button>
-	    )}
-	    callback={(data) => console.log(data)} 
-	  />
-	);
+  return (
+    <PWAInstallerPrompt 
+      render={({ onClick }) => (
+        <button type="button" onClick={onClick}> // make sure you pass onClick
+          Install
+        </button>
+      )}
+      callback={(data) => console.log(data)} 
+    />
+  );
 }
 export default App;
 ```
@@ -86,3 +86,10 @@ Callback properties:
    isInstallFailed: false // true, if installation is failed
 }
 ```
+
+#### Use Full Links
+ - [ ] [Add a web app manifest](https://web.dev/add-manifest)
+ - [ ] [Pattern for promoting](https://web.dev/promote-install/)
+
+## License
+[MIT](https://github.com/shnaveen25/react-pwa-installer-prompt/blob/main/LICENSE) © [Naveen Heroorkar](https://bit.ly/33QBYj9)
